@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Materno-Infantil "Adame"| Citas</title>
+
+    <link rel="stylesheet" href="css/citas.css">
+    <link rel="shortcut icon" href="img/ICONO.png" type="image/x-icon">
+
+</head>
+<body>
+    <header class="encabezado">
+        <nav class="navegacion">
+                <a href="index.html">
+                    <img src="img/LOGO CLINICA RE.png" alt="Clinica-Materno-Infantil-Adame" class="navlogo">
+                </a>
+                <button id="btn-menu" class="icono-menu">
+                    <img src="img/menu-icon.png" alt="Abrir Menú">
+                </button>    
+                <div class="menu-barra" id="colapsado">
+                    <div class="acomodarboton">
+                        <button id="btn-cerrar" class="icono-cerrar">
+                            <img src="img/cerrar.png" alt="Cerrar Menú">
+                        </button>
+                    </div>
+                    <ul class="opciones">
+                        <li class="pestanas">
+                            <a href="index.html" class="pestanaenlace">Inicio</a>
+                        </li>
+                        <li class="pestanas">
+                            <a href="citas.html" class="pestanaenlace">Citas</a>
+                        </li>
+                        <li class="pestanas">
+                            <a href="especialidades.html" class="pestanaenlace">Especialidades</a>
+                        </li>
+                        <li class="pestanas">
+                            <a href="acerca.html" class="pestanaenlace">Acerca de</a>
+                        </li>
+                        <li class="pestanas">
+                            <a href="contacto.html" class="pestanaenlace">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    </header>
+
+    <section class="formulario">
+        <div class="container">
+            <div class="tittle">Registrar Cita</div>
+            <form action="#" method="post" id="form">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Nombre(s)*:</span>
+                        <input type="text" placeholder="Ingrese nombre(s)" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Apellidos*:</span>
+                        <input type="text" placeholder="Ingrese apellido" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Teléfono*:</span>
+                        <input type="tel" placeholder="Ingrese teléfono" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Correo Electrónico*:</span>
+                        <input type="text" placeholder="ejemplo@mail.com" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Edad*:</span>
+                        <input type="text" placeholder="Ingrese edad" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Especialidad*:</span>
+                        <select name="opciones">
+                            <option value="opcion1">Consulta externa</option>
+                            <option value="opcion2">Urgencias y cirugía</option>
+                            <option value="opcion3">Odontología</option>
+                            <option value="opcion4">Anestesiologia</option>
+                            <option value="opcion5">Ginecobstetricia</option>
+                            <option value="opcion6">Estudios-laboratorios</option>
+                            <option value="opcion7">Ultrasonido y rayos X</option>
+                            <option value="opcion8">Pediatria</option>
+                        </select>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Fecha de cita*:</span>
+                        <input type="date" placeholder="Ingrese la fecha" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Hora*:</span>
+                        <select name="opciones">
+                            <option value="hora1">7:00 a.m.</option>
+                            <option value="hora1-5">7:30 a.m.</option>
+                            <option value="hora2">8:00 a.m.</option>
+                            <option value="hora2-5">8:30 a.m.</option>
+                            <option value="hora3">9:00 a.m.</option>
+                            <option value="hora3-5">9:30 a.m.</option>
+                            <option value="hora4">10:00 a.m.</option>
+                            <option value="hora4-5">10:30 a.m.</option>
+                            <option value="hora5">11:00 a.m.</option>
+                            <option value="hora5-5">11:30 a.m.</option>
+                            <option value="hora6">12:00 p.m.</option>
+                            <option value="hora6-5">12:30 p.m.</option>
+                            <option value="hora7">1:00 p.m.</option>
+                            <option value="hora7-5">1:30 p.m.</option>
+                            <option value="hora8">2:00 p.m.</option>
+                            <option value="hora8-5">2:30 p.m.</option>
+                            <option value="hora9">3:00 p.m.</option>
+                            <option value="hora9-5">3:30 p.m.</option>
+                            <option value="hora10">4:00 p.m.</option>
+                            <option value="hora10-5">4:30 p.m.</option>
+                            <option value="hora11">5:00 p.m.</option>
+                            <option value="hora11-5">5:30 p.m.</option>
+                            <option value="hora12">6:00 p.m.</option>
+                            <option value="hora12-5">7:00 p.m.</option>
+                            <option value="hora13">7:30 p.m.</option>
+                            <option value="hora13-5">8:00 p.m.</option>
+                            <option value="hora14">8:30 p.m.</option>
+                            <option value="hora14-5">9:00 p.m.</option>
+                        </select>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Comentarios*:</span>
+                        <textarea placeholder="Ingrese comentario relacionado a su necesidad" required></textarea>
+                    </div>
+                    <div class="mensaje-exito" id="mensaje-exito">
+                        <img class="mensaje-imagen" src="img/exitoso.png" alt="registro exitoso">
+                        <div class="mensaje-texto">
+                        Su cita ha sido registrada con éxito. <br>Mantengase al pendiente de su <br> correo/teléfono para la confirmación de la cita.
+                        </div>
+                    </div>
+                </div>
+                <div class="form-boton">
+                    <div class="button">
+                        <input type="submit" value="Registrar cita">  
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    
+    <footer class="pie-pagina">
+        <div class="columna-pie">
+            <h3 class="octavo-titulo">Domicilio</h3>
+            <p>Av. Necaxa 547, MZ 037,</p>
+            <p>Constitución de 1917,</p>
+            <p>Tlalnepantla de Baz, Estado de México.</p>
+            <div class="telefono">
+                <a href="https://wa.me/525512345678?text=Somos la clínica materno-infantil 'Adame', listos para ayudarte" target=_blank><p class="telefono-pie">+52 55 12345678</p></a>
+                <a href="https://wa.me/525512345678?text=Somos la clínica materno-infantil 'Adame', listos para ayudarte" target=_blank><img src="img/whatsapp.png" alt="Logo whatsapp"></a>
+            </div>
+        </div>
+        <div class="columna-pie">
+            <h3 class="octavo-titulo">Enlaces Rápidos</h3>
+            <ul class="ul-pie">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="citas.html">Citas</a></li>
+                <li><a href="especialidades.html">Especialidades</a></li>
+                <li><a href="acerca.html">Acerca de</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="columna-pie">
+            <h3 class="octavo-titulo">Redes Sociales</h3>
+            <ul class="redes-sociales">
+                <li><a href="https://www.facebook.com/" target="_blank"><img src="img/facebook.png" alt="Facebook">Facebook</a></li>
+                <li><a href="https://www.twitter.com/" target="_blank"><img src="img/twitter.png" alt="Twitter">Twitter</a></li>
+                <li><a href="https://www.instagram.com" target="_blank"><img src="img/instagram.png" alt="Instagram">Instagram</a></li>
+                <li><a href="https://www.tiktok.com" target="_blank"><img src="img/tiktok.png" alt="Tiktok">Tiktok</a></li>
+            </ul>
+        </div>
+    </footer>    
+    <script src="javascript/script.js"></script>
+</body>
+</html>
